@@ -1,13 +1,19 @@
-/* let multiply = fuction(x, y){
-    console.log( x *y);
-}*/
+let me = {
+    name:"Arti",
+    age :20,
+    thisInarrow:()=>{
+        console.log("My name is"+this.name);
+    },
+    printallDetailsOFuser(){
+        const findName =()=>{
+        console.log("My name is "+ this.name);
+        }
+    const printage=()=>{
+        console.log("My age is  " + this.age);
+    }
+    findName();
+    printage();
 
-let multiply = function(x){
-    return function(y){
-        console.log( x * y);
     }
 }
-let multiplyByTwo = multiply(2);
-multiplyByTwo(3);
-let multiplyByThree = multiply(3);
-multiplyByThree(10);
+me.printallDetailsOFuser();
