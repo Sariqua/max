@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> Welcome to  Sharpner </h1>
-    <script src="index.js"></script>
-</body>
+<html>
+    <body>
+        
+        <form  onsubmit="saveToLocalStorage(event)">
+            <label> Choose expenseamount</label>
+            <input id='username' type="number" name="username"  required/>
+            <label> Choose description</label>
+            <input id='email' type="text" name="emailId"  required/>
+            <label>Choose category</label>
+            <select id = 'category' >
+                <option value="Category">Choose Category</option>
+                <option value="Movie">Movie</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Travel">Travel</option>
+            </select>
+            <button> Add Item </button>
+        </form>
+        <ul id='listOfUsers'></ul>
+        <script src="ex.js">
+           
+        </script>
+
+
+    </body>
 </html>
